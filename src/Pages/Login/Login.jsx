@@ -64,7 +64,7 @@ const Login = () => {
                         style={{
                             maxWidth: 600,
                             margin: ' 150px auto',
-                            boxShadow: '1px 1px 7px 4px  #00BFFF',
+                            boxShadow: '1px 1px 6px 1px  #00BFFF',
                             borderRadius: '10px',
                             padding: '50px 0'
 
