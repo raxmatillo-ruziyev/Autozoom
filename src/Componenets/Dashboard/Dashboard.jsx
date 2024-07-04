@@ -1,9 +1,8 @@
 import React from 'react'
-
 const Dashboard = () => {
   return (
     <div>
-      <h1>Dashboardga hush kelibsiz</h1>
+      <h1>Welcome to  Dashboard</h1>
     </div>
   )
 }

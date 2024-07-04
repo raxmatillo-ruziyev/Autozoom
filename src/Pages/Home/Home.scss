@@ -26,8 +26,5 @@
   
   .header{
     transition: width 0.26s ease;
-    -webkit-transition: width 0.26s ease;
-    -moz-transition: width 0.26s ease;
-    -ms-transition: width 0.26s ease;
-    -o-transition: width 0.26s ease;
+    z-index: 1999;
 }
