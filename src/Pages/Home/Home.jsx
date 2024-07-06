@@ -39,16 +39,16 @@ const Home = () => {
                 <Link to={'/'}>Log out</Link>
             ),
         },];
-        const logOut = ()=>{
-            localStorage.removeItem('access_token')
-            navigate('/')
-        }
+    const logOut = () => {
+        localStorage.removeItem('access_token')
+        navigate('/')
+    }
 
     return (
         <>
             <Layout>
                 <Sider
-                 width={220}
+                    width={220}
                     className='sider'
                     trigger={null}
                     collapsible
@@ -61,13 +61,13 @@ const Home = () => {
                         items={[
                             {
                                 key: '0',
-                                icon:collapsed&& <img src={logo}/>,
-                                label: <Link  ><h3>AutoZoomAdmin</h3></Link>,
+                                icon: collapsed && <img src={logo} />,
+                                label: <Link  to={''} ><h3>AutoZoomAdmin</h3></Link>,
                             },
                             {
                                 key: '1',
                                 icon: <HomeOutlined />,
-                                label: <Link to={'dashboard'} >Dashboard</Link>,
+                                label: <Link to={''} >Dashboard</Link>,
                             },
 
                             {
@@ -106,27 +106,27 @@ const Home = () => {
                     />
                 </Sider>
                 <Layout>
-                    <Header 
-                    className='header'
-                       style={
-                        collapsed
-                          ? {
-                              padding: 0,
-                              background: colorBgContainer,
-                              position: "fixed",
-                              right: 0,
-                              width: "calc(100% - 80px)",
+                    <Header
+                        className='header'
+                        style={
+                            collapsed
+                                ? {
+                                    padding: 0,
+                                    background: colorBgContainer,
+                                    position: "fixed",
+                                    right: 0,
+                                    width: "calc(100% - 80px)",
 
-                            }
-                          : {
-                              padding: 0,
-                              background: colorBgContainer,
-                              position: "fixed",
-                              right: 0,
-                              width: "calc(100% - 220px)",
-                            }
-                      }
-            
+                                }
+                                : {
+                                    padding: 0,
+                                    background: colorBgContainer,
+                                    position: "fixed",
+                                    right: 0,
+                                    width: "calc(100% - 220px)",
+                                }
+                        }
+
                     >
                         <div style={{
                             display: 'flex',
@@ -146,14 +146,14 @@ const Home = () => {
                             />
 
                             <Dropdown
-                              onClick={logOut}
+                                onClick={logOut}
                                 menu={{
                                     items,
                                 }}
                                 placement="bottom"
                             >
                                 <Button type='primary'
-                              
+
 
                                     icon={<UserOutlined />}
 
