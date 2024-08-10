@@ -148,6 +148,7 @@ function Brands() {
       image: (
         <Image
           width={100}
+          height={110}
           src={`${imageURL}${brand.image_src}`}
           alt={brand.title}
         />

@@ -154,7 +154,8 @@ const Category = () => {
       name_ru: category.name_ru,
       image: (
         <Image
-          width={100}
+          width={110}
+          height={100}
           src={`${imageURL}${category.image_src}`}
           alt={category.name_en}
         />
